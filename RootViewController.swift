@@ -8,11 +8,7 @@ class RootViewController: UIViewController {
     
     @IBOutlet weak var search: UIBarButtonItem!
     
-    @IBOutlet weak var searchBtn: UIBarButtonItem!
     
-    @IBAction func searchButton(_ sender: Any) {
-        
-    }
     
     var firstNumberUserInput : Int = 0
     var secondNumberUserInput : Int = 0
@@ -25,7 +21,7 @@ class RootViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        searchBtn.isEnabled = false
+        
     }
     
     @IBAction func addButton(_ sender: Any) {
@@ -86,10 +82,6 @@ class RootViewController: UIViewController {
             
             present(alert, animated: true, completion: nil)
         }
-        else if firstNumberUserInput < secondNumberUserInput {
-            print("cannot")
-        }
-        
         else {
             resutlDiv = firstNumberUserInput / secondNumberUserInput
             is999(resultOfCalculation999: resutlDiv)
@@ -100,7 +92,6 @@ class RootViewController: UIViewController {
     
     func is999 (resultOfCalculation999 : Int) {
         if resultOfCalculation999 == 999 {
-            searchBtn.isEnabled = true
             performSegue(withIdentifier: "start", sender: self)
         }
     }

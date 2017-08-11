@@ -35,7 +35,6 @@
                                     <navigationItem title="Home page" id="z8Z-QC-ENX">
                                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="VpB-ab-ter">
                                             <connections>
-                                                <action selector="searchButton:" destination="BYZ-38-t0r" id="rYK-OB-YrT"/>
                                                 <segue destination="IOs-MM-H01" kind="show" id="HAU-8l-gb7"/>
                                             </connections>
                                         </barButtonItem>
@@ -50,7 +49,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="viX-kJ-6Hp">
-                                <rect key="frame" x="49" y="427" width="46" height="30"/>
+                                <rect key="frame" x="49" y="417" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="➕"/>
                                 <connections>
@@ -58,27 +57,27 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbQ-hN-TGt">
-                                <rect key="frame" x="280" y="427" width="46" height="30"/>
+                                <rect key="frame" x="280" y="417" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="➗"/>
                                 <connections>
                                     <action selector="divButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RuH-6h-QxH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAt-xX-2eb">
-                                <rect key="frame" x="194" y="427" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="✖️"/>
-                                <connections>
-                                    <action selector="mulButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHD-D0-dfI"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0G9-tf-R4v">
-                                <rect key="frame" x="121" y="427" width="46" height="30"/>
+                                <rect key="frame" x="123" y="417" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="➖"/>
                                 <connections>
                                     <action selector="minusButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skM-Bt-aA1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAt-xX-2eb">
+                                <rect key="frame" x="201" y="417" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="✖️"/>
+                                <connections>
+                                    <action selector="mulButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vHD-D0-dfI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -87,8 +86,6 @@
                     <navigationItem key="navigationItem" id="14g-3X-2EK"/>
                     <connections>
                         <outlet property="firstInput" destination="T54-fd-hvg" id="qaJ-lJ-2DQ"/>
-                        <outlet property="search" destination="VpB-ab-ter" id="OMk-qF-aZv"/>
-                        <outlet property="searchBtn" destination="VpB-ab-ter" id="eFF-dq-Hh9"/>
                         <outlet property="secondInput" destination="oi6-OC-9Vs" id="amL-uw-TQZ"/>
                     </connections>
                 </viewController>
